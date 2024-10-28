@@ -21,19 +21,19 @@
 				elementS.style.opacity = "1";
 				elementS.style.filter = "grayscale(0%)";
 			}
-			else if(letiDate.setHours(0,0,0,0) == todaysDate.setHours(0,0,0,0)){
+			else if(letiDate.setHours(0,0,0,0) <= todaysDate.setHours(0,0,0,0)){
 				let elementS = document.getElementById("leti");
 				elementS.setAttribute("onclick","vota('Leti')");
 				elementS.style.opacity = "1";
 				elementS.style.filter = "grayscale(0%)";
 			}
-			else if(prosciuDate.setHours(0,0,0,0) == todaysDate.setHours(0,0,0,0)){
+			else if(prosciuDate.setHours(0,0,0,0) <= todaysDate.setHours(0,0,0,0)){
 				let elementS = document.getElementById("prosciu");
 				elementS.setAttribute("onclick","vota('Carol')");
 				elementS.style.opacity = "1";
 				elementS.style.filter = "grayscale(0%)";
 			}
-			else if(martaDate.setHours(0,0,0,0) == todaysDate.setHours(0,0,0,0)){
+			else if(martaDate.setHours(0,0,0,0) <= todaysDate.setHours(0,0,0,0)){
 				let elementS = document.getElementById("marta");
 				elementS.setAttribute("onclick","vota('Marta')");
 				elementS.style.opacity = "1";
