@@ -6,10 +6,10 @@
 	
 	<script>
 	
-		var samuDate = new Date("10/02/2024");
-		var letiDate = new Date("10/09/2024");
-		var prosciuDate = new Date("10/27/2024");
-		var martaDate = new Date("10/12/2024");
+		var samuDate = new Date("11/02/2024");
+		var letiDate = new Date("11/09/2024");
+		var prosciuDate = new Date("11/27/2024");
+		var martaDate = new Date("12/12/2024");
 		var todaysDate = new Date();
 		
 		<!-- makes options disactive due to the date -->
@@ -21,19 +21,19 @@
 				elementS.style.opacity = "1";
 				elementS.style.filter = "grayscale(0%)";
 			}
-			else if(letiDate.setHours(0,0,0,0) <= todaysDate.setHours(0,0,0,0)){
+			if(letiDate.setHours(0,0,0,0) <= todaysDate.setHours(0,0,0,0)){
 				let elementS = document.getElementById("leti");
 				elementS.setAttribute("onclick","vota('Leti')");
 				elementS.style.opacity = "1";
 				elementS.style.filter = "grayscale(0%)";
 			}
-			else if(prosciuDate.setHours(0,0,0,0) <= todaysDate.setHours(0,0,0,0)){
+			if(prosciuDate.setHours(0,0,0,0) <= todaysDate.setHours(0,0,0,0)){
 				let elementS = document.getElementById("prosciu");
 				elementS.setAttribute("onclick","vota('Carol')");
 				elementS.style.opacity = "1";
 				elementS.style.filter = "grayscale(0%)";
 			}
-			else if(martaDate.setHours(0,0,0,0) <= todaysDate.setHours(0,0,0,0)){
+			if(martaDate.setHours(0,0,0,0) <= todaysDate.setHours(0,0,0,0)){
 				let elementS = document.getElementById("marta");
 				elementS.setAttribute("onclick","vota('Marta')");
 				elementS.style.opacity = "1";
@@ -76,6 +76,10 @@
 		<div id="marta" class="menuOption marta v4BG">
 			<div id="nome" class="nome">Dott. sa Marta Rinero</div>
 			<div id="foto" class="foto martaFoto"></div>
+		</div>
+		<div id="gio" class="menuOption gio v5BG">
+			<div id="nome" class="nome">In arrivo</div>
+			<div id="foto" class="foto gioFoto"></div>
 		</div>
 
 	</div>
